@@ -1,0 +1,13 @@
+.drr-card-container {
+    background-color: var(--drr-color-bg-tertiary);
+    color: var(--drr-color-font-primary);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar-card {
+    margin-right: 20px;
+    font-size: 16px;
+}
