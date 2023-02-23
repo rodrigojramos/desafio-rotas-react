@@ -1,10 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Home from './routes/Home'
+import Welcome from './routes/Home/Welcome'
 
 export default function App() {
 
   return (
-    <h1>Olá mundo!</h1>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} >
+            <Route index element={<Navigate to="/home" />} />
+            <Route path="home" element={<Welcome />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
   )
 }
