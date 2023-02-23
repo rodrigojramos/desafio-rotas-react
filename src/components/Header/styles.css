@@ -24,3 +24,7 @@ header {
 .navbar-img img {
     width: 30px;
 }
+
+.menu-active {
+    font-weight: 700;
+  }

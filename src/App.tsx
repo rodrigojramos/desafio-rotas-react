@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './routes/Home'
 import About from './routes/Home/About'
+import NotFound from './routes/Home/NotFound'
 import Products from './routes/Home/Products'
 import Books from './routes/Home/Products/Books'
 import Computers from './routes/Home/Products/Computers'
@@ -22,6 +23,7 @@ export default function App() {
               <Route path="books" element={<Books />} />
             </Route>
             <Route path="about" element={<About />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
