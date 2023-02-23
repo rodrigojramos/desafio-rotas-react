@@ -1,5 +1,6 @@
 import "./styles.css";
 import homeIcon from "../../assets/home.svg";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -17,7 +18,9 @@ export default function Header() {
           </div>
         </div>
         <div className="navbar-img">
-            <img src={homeIcon} alt="Home" />
+            <Link to="/">
+              <img src={homeIcon} alt="Home" />
+            </Link>
         </div>
       </div>
     </header>
